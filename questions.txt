@@ -1,0 +1,8 @@
+What is Java?|Programming Language|Operating System|Web Server|Relational Database|1|1
+Which company initially created Java?|Microsoft|Apple|Sun Microsystems|Google|3|1
+What is the default value of a local integer variable?|0|1|null|Depends, it must be initialized|4|2
+Which method is the entry point for a standard Java program?|start()|run()|init()|main()|4|1
+Which package contains the ArrayList class natively?|java.io|java.util|java.lang|java.net|2|2
+What access modifier makes a variable accessible only within its own class?|public|protected|private|default|3|1
+Which runtime environment allows Java compilation to be independent?|JRE|JVM|JDK|JIT|2|3
+In Java, how long is an IPv4 address string?|This is a trick!|IPs are 32 bits natively|It varies|Whatever|2|4
