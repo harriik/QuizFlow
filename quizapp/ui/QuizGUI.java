@@ -13,7 +13,7 @@ public class QuizGUI extends JFrame {
     private JPanel mainPanel;
     private CardLayout cardLayout;
 
-    private JLabel questionLabel;
+    private JTextArea questionLabel;
     private JRadioButton[] optionButtons;
     private ButtonGroup buttonGroup;
     private JButton nextButton;
@@ -161,10 +161,14 @@ public class QuizGUI extends JFrame {
         ));
         contentCard.setPreferredSize(new Dimension(650, 320));
 
-        questionLabel = new JLabel("Loading...");
+        questionLabel = new JTextArea("Loading...");
         questionLabel.setFont(new Font("Segoe UI", Font.BOLD, 24));
         questionLabel.setForeground(textColor);
-        questionLabel.putClientProperty("html.disable", null);
+        questionLabel.setBackground(cardColor);
+        questionLabel.setLineWrap(true);
+        questionLabel.setWrapStyleWord(true);
+        questionLabel.setEditable(false);
+        questionLabel.setFocusable(false);
         questionLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         contentCard.add(questionLabel);
         contentCard.add(Box.createRigidArea(new Dimension(0, 30)));
@@ -226,7 +230,7 @@ public class QuizGUI extends JFrame {
         if (quizManager.hasNextQuestion()) {
             Question q = quizManager.getNextQuestion();
             
-            questionLabel.setText("<html><div style='width: 500px;'>" + q.getText() + "</div></html>");
+            questionLabel.setText(q.getText());
             
             String[] options = q.getOptions();
             for (int i = 0; i < 4; i++) {

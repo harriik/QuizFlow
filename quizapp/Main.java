@@ -30,7 +30,6 @@ public class Main {
                 }
             }
         } catch (Exception e) {
-            // Ignore error and fall back to Swing Default
         }
 
         QuizManager sessionManager = new QuizManager(questions);

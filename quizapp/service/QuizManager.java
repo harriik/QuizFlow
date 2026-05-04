@@ -7,9 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 
-/**
- * QuizManager handles the core logic of iterating over questions and keeping track of the score.
- */
 public class QuizManager {
     private ArrayList<Question> questions;
     private Iterator<Question> questionIterator;
@@ -22,9 +19,8 @@ public class QuizManager {
         this.questions = questions;
         this.score = 0;
         this.totalQuestions = questions.size();
-        this.processedCount = 0; // Tracks questions completely verified or timed out
+        this.processedCount = 0; 
         
-        // Sorting using Comparable (by difficulty)
         Collections.sort(this.questions);
         
         this.questionIterator = this.questions.iterator();
