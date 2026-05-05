@@ -8,7 +8,6 @@ public class Question implements Comparable<Question> {
 
     public Question(String text, String op1, String op2, String op3, String op4, int correctIndex, int difficulty) {
         this.text = text;
-        
         this.options = new String[]{op1, op2, op3, op4};
         this.correctIndex = correctIndex;
         this.difficulty = difficulty;
