@@ -5,4 +5,5 @@ Which method is the entry point for a standard Java program?|start()|run()|init(
 Which package contains the ArrayList class natively?|java.io|java.util|java.lang|java.net|2|2
 What access modifier makes a variable accessible only within its own class?|public|protected|private|default|3|1
 Which runtime environment allows Java compilation to be independent?|JRE|JVM|JDK|JIT|2|3
-In Java, how long is an IPv4 address string?|This is a trick!|IPs are 32 bits natively|It varies|Whatever|2|4
+What is the purpose of the 'static' keyword in Java?|It makes a variable non-writable.|It makes a method belong to the class.|It makes a method belong to the object.|It makes a class inherit from another class.|2|1
+
