@@ -94,7 +94,7 @@ public class QuizGUI extends JFrame {
                     "<h2 style='color: #2980b9;'>QuizFlow Rules</h2>" +
                     "<ul>" +
                     "<li>You have <b>" + TIME_PER_QUESTION + " seconds</b> to answer each question.</li>" +
-                    "<li>If you run out of time, the quiz will automatically advance.</li>" +
+                    "<li>If you run out of time, you have to skip the question.</li>" +
                     "<li>Think fast and aim for a 100% score!</li>" +
                     "</ul></body></html>";
             JOptionPane.showMessageDialog(this, rulesText, "How to Play", JOptionPane.INFORMATION_MESSAGE);
